@@ -8,9 +8,18 @@ class INI_Performance_Test {
     }
 
     void executeTest() {
-        LinkedList<IniEntry> iniEntries = new LinkedList<>()
+        def iniEntries = []
         try {
-            Ini ini = new Ini(new FileReader("performance_test.ini"))
+            def ini = new Ini(new FileReader("performance_test.ini"))
+            def section = ini.keySet()
+            for (def sectionName: section) {
+                for (def i = 1; i < 6; i++) {
+                    iniEntries += new IniEntry(SECTION: sectionName, KEY: sectionName + i, VALUE: ini.get(sectionName, sectionName+i))
+                }
+                IniEntry lastEntry = iniEntries.last() as IniEntry
+                ini.put(lastEntry.getSECTION(), lastEntry.getKEY(), "Testing around")
+                ini.put(lastEntry.getSECTION(), lastEntry.getKEY(), lastEntry.getVALUE())
+            }
         }
         catch (IOException e) {
             e.printStackTrace()

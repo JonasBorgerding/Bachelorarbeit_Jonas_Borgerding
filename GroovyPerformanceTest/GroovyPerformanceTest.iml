@@ -6,8 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="groovy-3.0.6" level="application" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sqlite-jdbc-3.32.3.2" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -18,7 +19,5 @@
         <jarDirectory url="file:///usr/lib/groovy-3.0.6/lib/extras-jaxb" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="sqlite-jdbc-3.32.3.2" level="project" />
-    <orderEntry type="library" name="ini4j-0.5.4" level="project" />
   </component>
 </module>

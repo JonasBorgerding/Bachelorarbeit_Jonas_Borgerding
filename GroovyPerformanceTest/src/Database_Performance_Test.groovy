@@ -1,5 +1,6 @@
 import groovy.sql.Sql
 
+import java.sql.DriverManager
 import java.sql.SQLException
 
 class Database_Performance_Test {
@@ -13,21 +14,24 @@ class Database_Performance_Test {
 
     void executeTest() {
         List<UnicodeEntry> unicodeEntryList = new LinkedList<>()
+
         try {
-            Sql.newInstance("jdbc:sqlite:unicode.sqlite").
-                    query("select * from unicode;") {
-                    while (it.next()) {
-                        String resultChar = it.getString("CHAR")
-                        char CHAR = resultChar.size() > 0 ? resultChar.charAt(0) : 0
-                        unicodeEntryList << new UnicodeEntry(
-                                ID: it.getInt("ID"),
+            Sql.newInstance("jdbc:sqlite:unicode.sqlite", "org.sqlite.JDBC").with {
+                query('select * from unicode') {rs ->
+                    while (rs.next()) {
+                        String resultChar = rs.getString("CHAR")
+                        char CHAR = resultChar.size() > 0 ? resultChar.charAt(0) : (char) 0
+                        unicodeEntryList += new UnicodeEntry(
+                                ID: rs.getInt("ID"),
                                 UnicodeCharacter: CHAR,
-                                PREVIOUS: it.getInt("PREVIOUS"),
-                                NEXT: it.getInt("NEXT")
+                                PREVIOUS: rs.getInt("PREVIOUS"),
+                                NEXT: rs.getInt("NEXT")
                         )
                     }
                 }
+                close()
             }
+        }
         catch (SQLException e){
             e.printStackTrace()
         }
