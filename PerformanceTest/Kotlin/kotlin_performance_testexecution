@@ -1,0 +1,2 @@
+kotlinc -classpath ".:../JVM_Libraries/ini4j-0.5.4.jar:../JVM_Libraries/sqlite-jdbc-3.32.3.2.jar" -include-runtime *.kt
+java -classpath ".:../JVM_Libraries/*" Performance_TestKt

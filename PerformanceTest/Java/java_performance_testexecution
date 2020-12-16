@@ -1,0 +1,2 @@
+javac -classpath ".:../JVM_Libraries/*" Performance_Test.java
+java -classpath ".:../JVM_Libraries/*" Performance_Test

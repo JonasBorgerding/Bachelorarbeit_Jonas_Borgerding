@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Old performance Test directories/CSharpPerformanceTest/CSharpPerformanceTest.csproj": {}
+  },
+  "projects": {
+    "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Old performance Test directories/CSharpPerformanceTest/CSharpPerformanceTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Old performance Test directories/CSharpPerformanceTest/CSharpPerformanceTest.csproj",
+        "projectName": "CSharpPerformanceTest",
+        "projectPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Old performance Test directories/CSharpPerformanceTest/CSharpPerformanceTest.csproj",
+        "packagesPath": "/home/jonas/.nuget/packages/",
+        "outputPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Old performance Test directories/CSharpPerformanceTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.6, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "ini-parser": {
+              "target": "Package",
+              "version": "[2.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

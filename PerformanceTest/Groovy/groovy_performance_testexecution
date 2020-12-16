@@ -1,0 +1,1 @@
+groovy -cp ".:../JVM_Libraries/*" Performance_Test.groovy
