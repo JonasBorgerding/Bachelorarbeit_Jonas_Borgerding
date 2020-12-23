@@ -1,0 +1,40 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
+\contentsline {section}{\numberline {2}Grundlagen}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Technologieplattformen}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Native-Entwicklung}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Cross-Platform-Entwicklung}{3}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Web-Entwicklung}{4}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Hybride-Entwicklung}{5}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}Programmiersprachen}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}TIOBE Index}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}GitHut 2.0}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Time Machine / Wayback Machine}{6}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Top 20 Programmiersprachen aus dem TIOBE Index und GitHut 2.0 Index}{6}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Programmiersprache ist eine Hochsprache}{8}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Programmiersprachen mit Web Framework und GUI Designer}{10}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Programmiersprachen Einleitung und letztes Update}{11}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Ausführungsgeschwindigkeit von einigen Programmiersprachen}{13}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Entwicklungsgeschwindigkeit}{15}{subsubsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.3}Web Frameworks}{15}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Frameworks mit einem GUI Designer}{15}{subsubsection.2.3.1}%
+\contentsline {section}{\numberline {3}Vorstellung von Opcenter Execution Pharma}{17}{section.3}%
+\contentsline {section}{\numberline {4}Auswahl einer geeigneten Technologieplattform}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Auswahlkriterien}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Vorgehen bei der Auswahl}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entscheidung}{20}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Auswahl geeigneter Programmiersprachen}{23}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Binäre Filterung}{23}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Auswahlkriterien}{23}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Vorgehen bei der Auswahl}{23}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Entscheidung}{24}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Nicht-Binäre Filterung}{25}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Auswahlkriterien}{25}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Vorgehen bei der Auswahl}{25}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Entscheidung}{27}{subsubsection.5.2.3}%
+\contentsline {section}{\numberline {6}Auswahl geeigneter Web-Frameworks}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Auswahlkriterien}{36}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Vorgehen bei der Auswahl}{36}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Entscheidung}{37}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Entwicklung eiens Moduls in verschiedenen Frameworks}{38}{section.7}%
+\contentsline {section}{\numberline {8}Entscheidung für ein Framework}{39}{section.8}%
