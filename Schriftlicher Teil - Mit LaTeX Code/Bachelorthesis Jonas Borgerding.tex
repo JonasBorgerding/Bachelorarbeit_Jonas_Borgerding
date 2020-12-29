@@ -375,7 +375,8 @@
     \textbf{Java:}\\
     \textit{1. JSF (Java Server Faces)}: Hier können Komponenten per drag and drop verwendet werden. Es ist kein bis kaum HTML, CSS und JavaScript notwendig. \cite{JavaWebFramework1}\\
     \textit{2. Vaadin}: Mit dem Vaadin Designer (kostenplfichtig) lassen sich Webseiten per drag and drop designen. \cite{JavaVaadinDesigner}\\
-    TODO
+    \textbf{Scala:}\\
+    \textit{1. TODO}
     \newpage\noindent
     %
     %%%%%%%%%%%%%%%%%%%%%%%%%% Vorstellung Opcenter Execution Pharma %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -385,7 +386,7 @@
     Das System "Opcenter Execution Pharma" (OEP) ist ein MES-Lösung für die pharmazeutische Industrie, welche in VB6 geschrieben wurde und als Desktop Anwendung bereitgestellt wird. MES bedeutet "Manufacturing Execution System", oft als Produktionsleitsystem bezeichnet, und ermöglicht die Führung, Lenkung, Steuerung oder Kontrolle von Produktionen in Echtzeit.\\
     Mit OEP wird eine papierlose Fertigung und vollelektronische Chargenerfassung ermöglicht. Es werden außerdem erweiterte Funktionen für die manuelle oder automatisierte Entwicklung, Optimierung und Verwaltung von Produktionsvorgängen und -prozessen.\\
     OEP gibt durch verschiedene Fertigungsressourcen, inklusive Personen, Anlagen, Produkte und Prozesse, eine effiziente Produktfertigung.\\
-    Genauere Informationen zu verschiedenen Teilen können hier gefunden werden: \cite[Hier]{OEP Main Page}.\\\\
+    Genauere Informationen zu verschiedenen Teilen können hier gefunden werden: \cite{OEP Main Page}.\\\\
     Für die Neuentwicklung bestehen folgende Anforderungen:
     \begin{enumerate}
         \item Plattformunabhängig
@@ -424,6 +425,12 @@
             \item \textbf{Aktuelles System:} Aktuell wird das System in VB6 entwickelt und es wird nur ein Programm erstellt, da nur Windows als Betriebssystem verwendet wird.
             \item \textbf{Anforderung an die neue Plattform:} Bei der neuen Plattform sollen die Entwicklungkosten so gering wie möglich gehalten werden bei gleichzeitiger Plattformunabhängig. Von der Entwicklung ausgeschlossen sind Low Code Plattformen, denn die Projekte auf der Prozessebene sind viel zu komplex. Mit Low Code Plattformen würde eine weitere Komplexität hinzukommen, vor allem bei der Dokumentation.
         \end{enumerate}
+        \item Anforderungen an die Programmiersprache
+        \begin{enumerate}[label=]
+            \item \textbf{Einleitung:} Die Programmiersprache sollte eine bestimmte beliebtheit haben, sodass sichergestellt werden kann, dass es eine Dokumentation zu dieser gibt. Weiterhin sollte die Programmiersprache grundsätzlich nicht zu lange zum Entwickeln brauchen, bestmöglich eine Hochsprache. Denn mit Hochsprachen muss nicht alles betrachtet werden, wie Speichermanagement. Außerdem soll die Programmiersprache für die Web Entwicklung geeignet sein und das Framework selbst oder eine Erweiterung soll einen Designer zum Gestalten von Webseiten bereitstellen.
+            \item \textbf{Aktuelle Programmiersprache:} VB6 war zu der Zeit eine sehr beliebte Programmiersprache. Heutzutage wird Visual Basic zwar noch verwendet, jedoch ist die Beliebtheit nicht mehr als zu hoch.
+            \item \textbf{Anforderung an die neue Programmiersprache:} Die Programmiersprache soll unter den Top 20 Programmiersprachen aus dem TIOBE Index von Dezember 2019 bis Oktober 2020 und dem GitHut Index vom Quartal 4/2019 bis 03/2020 sein. Weiterhin soll die Programmiersprache eine Hochsprache sein und anhand des Ergebnisses von \ref{TechnologieplattformEntscheidung} ein Web Framework bereitstellen.
+        \end{enumerate}
     \end{enumerate}
     % Das bestehende System "Opcenter Execution Pharma" ist eine in VB6 entwickelte Desktop Anwendung. Jedoch erhält VB6 seit 2005 keinen Support mehr. Weiterhin sind die Kosten für die Installation und Wartung bei dem Kunden sehr hoch. Dies liegt daran, dass die Anwendung auf jeden Client Computer installiert werden muss, bei bis zu mehreren Hundert Computer dauert es sehr lange und kostet dementsprechend mehr Geld. \\
     % Da es in der Pharmaindustrie wegen der Einhaltung von bestimmten Qualitätsanforderungen sehr lange dauert ein System neu zu implentieren, ist es dringend erforderlich auf eine neue, moderne Technologieplattform umzuseteigen. Diese neue Technologieplattform soll möglichsts Zukunftssicher sein, da ein ständiger Umstieg nicht so einfach ist. Weiterhin sollte die Installtion und Wartung nicht mehr so viel Geld kosten.\\\indent
@@ -459,6 +466,8 @@
     Nach der Untersuchung der Kriterienerfüllung wird eine begründete Entscheidung für eine Technologieplattform getroffen.
     \subsection{Entscheidung}
     \label{TechnologieplattformEntscheidung}
+    \textbf{\textit{Vorab:}}\\
+    Im Grunde reicht eine blose Entscheidung mithilfe der Grundlagen aus \ref{GrundlagenTechnologiePlattformen} nicht aus, sondern es müsste in jeder Technologieplattform mindestens ein Projekt geschrieben werden, um einen Vergleich zu haben. Jedoch gibt es innerhalb einer Technologieplattform auch unterschiedliche Frameworks, die unterschiedliche Entwicklungszeiten benötigen. Deshalb wird bei der Entscheidung davon ausgegangen, dass die Frameworks der Technologieplattformen die gleiche Entwicklungszeit für ein Projekt benötigen, was in der Praxis natürlich nicht zutrifft.\\\\
     \textbf{\textit{Plattformunabhängigkeit:}}\\
     Im Grunde decken alle 4 Technologieplattformen alle Betriebssysteme ab. Jedoch gibt es einen Unterschied vom Aufwand her:\\
     \indent Bei der nativen Entwicklung muss für jedes Betriebssystem jeweils eine Anwendung geschrieben werden, was zu erhöhten Entwicklungskosten führt.\\
@@ -483,11 +492,16 @@
     % \indent Anders sieht es bei der Hybriden Entwicklung aus. Hier Muss für jede zu unterstützende Plattform eine Anwendung erstellt werden, die den Hauptteil auf den jeweiligen Betriebssystemen darstellt. Nachdem die native Anwendung erstellt wurde, sind die Entwicklungs- und Wartungskosten ungefährt so gering wie bei der Cross Platform und Web Entwicklung. Somit ist die Hybride Entwicklung günstiger als eine rein native Entwicklung, jedoch teurer als eine Web und Cross Platform Entwicklung.\\
     % \indent$\Rightarrow$ Von den Entwicklungskosten her sind die Cross Platform und Web Entwicklung am günstigsten, gefolgt von der Hybriden Entwicklung. Die native Entwicklung hat am meisten Entwicklungskosten. Etwas anders sieht es bei der Pflege aus. Hier sind die Web, Cross Platform und Hybride Entwicklung etwa gleichgünstig, denn es wird nur ein Projekt geplfegt. Die native Entwicklung ist hier weiterhin am teuersten, da mehrere Projekte geplfegt werden müssen. Somit sind die Web und Cross Platform Entwicklung die günstigsten Technologien, wenn es um die Entwicklung und Pflege geht.\\\\
     \textbf{\textit{Geringe Entwicklungszeit}}\\
-    TODO
-    Den Unterschied kann man stark erkennen:\\
-    \indent Anwendungen, die mit der nativen, Cross Platform und Hybriden Entwicklung geschrieben wurden, müssen auf allen Endnutzergeräten manuell installiert werden, da keine abhängigkeiten zu anderen Systemen bestehen dürfen. Somit ist Erstinstallation und jedes Update installieren sehr aufwendig und damit teuer.\\
-    \indent Anders sieht es bei der Web Entwicklung aus. Das Projekt, welches erstellt wird, muss auf nur einem Computer installiert werden und die anderen Computer können über einen Browser das System verwenden. Auch bei Updates muss nur der Computer, der als Server fungiert, das Update erhalten. Hier sind die Erstinstallation- und Updatekosten sehr gering.\\
-    \indent$\Rightarrow$ Die Web Entwicklung hat hier einen klaren Vorteil gegenüber den anderen Technologieplattformen.\\\\
+    Die Entwicklungszeiten sind ziemlich unterschiedlich:\\
+    \indent Mit der nativen Entwicklung muss für jedes zu unterstützende Betriebssystem eine eigene Anwendung geschrieben werden. Bei mehreren unterstützten Betriebssystemen muss das System mehrfach entwickelt werden, was zu langen und hohen Entwicklungskosten führt.\\
+    \indent Mit der Cross-Platform Entwicklung werden mit einem Projekt mehrere Betriebssysteme erreicht. Dadurch müssen nicht viele verschiedene Projekte gestartet werden, sondern im besten Fall 1. Dadurch sind die Entwicklungskosten wesentlich geringer.\\
+    \indent Die Web Entwicklung braucht nur ein Projekt, da die gängigen Betriebssysteme einen Browser zur Verfügung stellen und die Webseite im Intranet erreicht wird.\\
+    \indent Für die Hybride Entwicklung ist erstmal für jedes zu unterstützende Betriebssystem eine Anwendung notwendig, jedoch wird der Hauptteil nur einmal geschrieben und wird dann in den Container integriert. Dadurch sind die Entwicklungskosten sehr niedrig.\\
+    \indent$\Rightarrow$ Die kürzeste Entwicklungszeit haben die Web und Cross-Platform Entwicklung, etwas länger und kostenspieliger ist die Hybride Entwicklung, jedoch nur bis zu einem gewissen Teil.\\\\
+    % Den Unterschied kann man stark erkennen:\\
+    % \indent Anwendungen, die mit der nativen, Cross Platform und Hybriden Entwicklung geschrieben wurden, müssen auf allen Endnutzergeräten manuell installiert werden, da keine abhängigkeiten zu anderen Systemen bestehen dürfen. Somit ist Erstinstallation und jedes Update installieren sehr aufwendig und damit teuer.\\
+    % \indent Anders sieht es bei der Web Entwicklung aus. Das Projekt, welches erstellt wird, muss auf nur einem Computer installiert werden und die anderen Computer können über einen Browser das System verwenden. Auch bei Updates muss nur der Computer, der als Server fungiert, das Update erhalten. Hier sind die Erstinstallation- und Updatekosten sehr gering.\\
+    % \indent$\Rightarrow$ Die Web Entwicklung hat hier einen klaren Vorteil gegenüber den anderen Technologieplattformen.\\\\
     \indent$\Rightarrow$ Zusammengefasst ist die Web-Entwicklung die beste Option für eine Neuentwicklung. Sie ist zwar oft etwas etwas langsamer als eine native Anwendung, jedoch liegt dies unter anderem an der Kommunikation zwischen dem Server und dem Client. Die Verbindung zwischen dem Client und dem Server wird im Intranet aufgebaut, wodurch keine Informationen ins Internet gelangen. Allerdings sind nicht starke Rechner für die Clients notwendig, sondern "nur" ein starker Server. Dieser kann die Website schneller erstellen und dadurch etwas Geschwindigkeit aufholen. Vor allem wird durch die Web-Entwicklung eine Plattformunabhängigkeit geschaffen, die alle möglichen Betriebssysteme mit einem Browser direkt unterstützt. Mit der Plattformunabhängigkeit kommen geringere Entwicklungskosten als bei nativen und hybriden Entwicklungen. Auch sind die Kosten für die Installation und Wartung beim Kunden viel geringer, da nur 1 Rechner die neuere Version braucht. Ein Offline-Installtion ist auch möglich, da der Server in der Regel ein Desktop Computer ist.
     \newpage\noindent
     %
@@ -499,22 +513,17 @@
     Dieser Teil der Bachelorarbeit befasst sich mit der Auswahl von geeigneten Programmiersprachen für die Web Entwicklung. Hierfür wird dieser Teil geteilt. Im ersten Abschnitt werden Programmiersprachen mithilfe von Binären Kriterien herausgesucht und gefiltert, im zweiten Abschnitt werden die resultierenden Programmiersprachen durch nicht binäre Kriterien weitergefiltert.
     \subsection{Binäre Filterung}
     \subsubsection{Auswahlkriterien}
-    Für die binäre Filterung werden folgende Kriterien verwendet:
-    \begin{enumerate}
-        \item Die Programmiersprachen ist unter den Top 20 Sprachen in dem TIOBE Index (siehe \ref{GrundlagenTIOBE}) von Dezember 2019 bis Oktober 2020 oder unter den Top 20 Programmiersprachen in GitHut 2.0 (siehe \ref{GrundlagenGitHut}) in den Quartalen Q4/2019 bis Q3/2020.
-        \item Die Programmiersprache ist eine "Hochsprache", wie Beispielsweise Java, aber nicht Assembler
-        \item Die Programmiersprache ist für die Web-Entwicklung geeignet und es gibt mindestens 1 Web-Framework oder eine Erweiterung eines Web-Frameworks, welches einen graphischen Designer bereitstellt
-    \end{enumerate}
+    Für die binäre Filterung wird das Kriterium 7 (Anforderungen an die Programmiersprache) verwendet. Dieses beinhaltet die Punkte "Programmiersprache ist unter den Top 20 vom TIOBE und GitHut Index", "Programmiersprache ist eine Hochsprache" und "Programmiersprache stellt eine Web Framework mit einem Designer bereit".
     \subsubsection{Vorgehen bei der Auswahl}
     Die Kriterien werden nacheinander behandelt. Folgendes Vorgehen gilt für die Auswahl der einzelnen Kriterien:\\
-    \textbf{Programmiersprache unter Top 20 im TIOBE Index und unter Top 20 im GitHut Index}\\
+    \textbf{Programmiersprache istunter  den  Top  20  vom  TIOBE  und  GitHut  Index}\\
     Um auf die vergangenen TIOBE Indizes (siehe \ref{GrundlagenTIOBE}) zugreifen zu können verwende ich die Wayback Machine (siehe \ref{GrundlagenTimeMachine}).\\
     Für die Auswahl der Programmiersprachen werden der TIOBE Index und GitHut Index verwendet, da einer alleine nicht aussagekräftig genug ist. Denn nur die Anzahl der Suchanfragen zu berücksichtigen zeigt mir nicht, wie viel die Programmiersprache im Verhältnis zu anderen verwendet wird. So kann sehr viel nach einer Programmiersprache gesucht werden, weil diese beispielsweise neu ist oder sehr viel nachgeschlagen wird.\\
     Den GitHut Index alleine zu verwenden ist auch nicht aussagekräftig, denn ältere Programmiersprachen sind meistens in mehr Projekten vertreten als neuen Programmiersprachen.\\
     Die Mischung aus beiden Indizes berücksichtigt die Programmiersprachen, die mehr gesucht werden und die Programmiersprachen, die viel verwendet werden.\\\\
     \textbf{Programmiersprache ist eine Hochsprache}\\
     Es werden nur eindeutige "Hochsprachen", das heißt die Quellen geben das selbe Level an, für die Framework-Suche betrachtet, da diese eine höhere Abstraktion haben und dadurch einfacher zu lernen sind und es einfacher ist, in diesen etwas zu Entwickeln. "Hochsprachen" werden mehr für die Web Entwicklung eingesetzt als "niedrigere" Programmiersprachen, da es meistens nicht notwendig ist die letzte kleine Performanz rauszuholen. \cite{High level Low level languages}\\
-    \textbf{Programmiersprache hat eine Web Framework mit einem GUI Designer}
+    \textbf{Programmiersprache stellt eine Web Framework mit einem Designer bereit}
     Betrachtet werden nur Programmiersprachen mit mindestens einem Web Framework, welche einen GUI Designer haben. Der Grund dafür ist, dass ein Designer die Entwicklung sehr beschleunigt, da der Code nicht selbst geschrieben werden muss für die Oberfläche und das Endresultat direkt sichtbar ist.
     \subsubsection{Entscheidung}
     \label{BinaryLanguageEntscheidung}
@@ -524,18 +533,18 @@
     \textbf{Programmiersprache ist eine Hochsprache}\\
     Einordnung des Levels steht in den Grundlagen (siehe \ref{GrundlagenHochsprachen}). Nicht überall ist das Level eindeutig, deshalb wird die Entscheidung hier aufgegriffen:\\
     \textbf{C}: Da C als Hochsprache angesehen wurde, jetzt jedoch als Tiefsprache, würde ich C als Mittelsprache einordnen und daher nicht weiter betrachten.\\
-    \textbf{C++}: Da C++ einmal als Hochsprache und einmal als Mittelsprache eingeordnet wurde, würde ich C++ nicht weiter betrachten. C++ bietet zwar mehr Konzepte als C, aber es ist trotzdem sehr Hardwarenahe wegen direktem Speicherzugriff.\\
+    % \textbf{C++}: Da C++ einmal als Hochsprache und einmal als Mittelsprache eingeordnet wurde, würde ich C++ nicht weiter betrachten. C++ bietet zwar mehr Konzepte als C, aber es ist trotzdem sehr Hardwarenahe wegen direktem Speicherzugriff.\\
     \textbf{SQL}: SQL wird zwar als Hochsprache eingeordnet, jedoch ist SQL keine Programmiersprache im eigentlichen Sinne. Daher wird SQL nicht weiter betrachtet.\\
     \textbf{Objective-C}: Zwar wurde Objective-C als Hochsprache eingeordnet, jedoch ist sie eine Mischung aus C und Smalltalk. Da C eine Mittelsprache ist wird Objective-C nicht für die weiteren Schritte betrachtet.\\
-    \textbf{Assembly Language}: Assembly ist eine Niedrigsprache und wird daher nicht weiter betrachtet.\\
-    \textbf{Go}: Ist zwar eine moderne Programmiersprache, jedoch wird sie als Niedrigsprache angesehen. Daher wird Go nicht weiter betrachtet.\\
-    \textbf{R}: Auch R wird als eine Niedrigsprache angesehen und wird nicht weiter betrachtet.\\
+    % \textbf{Assembly Language}: Assembly ist eine Niedrigsprache und wird daher nicht weiter betrachtet.\\
+    % \textbf{Go}: Ist zwar eine moderne Programmiersprache, jedoch wird sie als Niedrigsprache angesehen. Daher wird Go nicht weiter betrachtet.\\
+    % \textbf{R}: Auch R wird als eine Niedrigsprache angesehen und wird nicht weiter betrachtet.\\
     \textbf{MATLAB}: Wird zwar als Hochsprache angesehen, jedoch wird sie für die Datenanalyse verwendet. Daher wird MATLAB nicht weiter betrachtet.\\
     \textbf{Visual Basic}: Da Visual Basic nicht mehr unterstützt wird, wird sie nicht weiter betrachtet.\\
     \textbf{PL/SQL}: Ist eine Erweiterung von SQL und wird daher nicht weiter betrachtet.\\
     \textbf{Classic Visual Basic}: Beinhaltet die Verionen von 6.0 und früher. Da schon VB 6.0 nicht unterstützt wird, wird Classic Visual Basic nicht weiter betrachtet.\\
     \textbf{Scratch}: Ist eine Visuelle Programmiersprache, die für Kinder zum Programmieren lernen entwickelt wurde. Daher wird Scratch nicht weiter betrachtet.\\
-    \textbf{Rust}: Wird als Niedrigsprache angesehen und daher nicht weiter betrachtet.\\
+    % \textbf{Rust}: Wird als Niedrigsprache angesehen und daher nicht weiter betrachtet.\\
     \textbf{Shell}: Wird in der Kommandozeile verwendet und daher nicht weiter betrachtet.\\
     \textbf{Vim Script}: Wurde für die Entwicklung für den Texteditor Vim entwickelt. Daher wird Vim Script nicht weiter betrachtet.\\\\
     Folgende Programmiersprachen wurden eindeutig als Hochsprache eingeordnet und werden daher weiterhin betrachtet:\\
@@ -545,12 +554,7 @@
     Java, Python, C$\sharp$, Visual Basic .NET, PHP, Delphi/Object Pascal, Groovy, Scala und Kotlin
     \subsection{Nicht-Binäre Filterung}
     \subsubsection{Auswahlkriterien}
-    Für die Nicht-Binäre Filterung werden folgende Kriterien verwendet:
-    \begin{enumerate}
-        \item Die Programmiersprachen sind Zukunftssicher.
-        \item Geringe Ausführungsgeschwindigkeit der Programmiersprachen.
-        \item Geringe Entwicklungszeit der Programmiersprachen.
-    \end{enumerate}
+    Für die Nicht-Binäre Filterung werden die Kriterien 4 (Zukunftssicherheit), 5 (Schnelle Ausführungsgeschwindigkeit) und 6 (Geringe Entwicklungszeit) verwendet.
     \subsubsection{Vorgehen bei der Auswahl}
     Auch hier werden Kriterien nacheinander abgearbeitet. Dabei wird folgendes Vorgehen für die einzelnen Schritte betrachtet:\\
     \textbf{Zukunftssicherheit der Programmiersprachen}\\
@@ -569,12 +573,16 @@
         \item Lesen und Schreiben von Dateien, denn oft werden Konfigurationen z.B. in INI-Dateien gespeichert. Diese müssen eingelsen werden. Bestmöglich gibt es eine Bibliothek oder es lassen sich Plattformspezifische Funktionen dafür aufrufen.
     \end{enumerate}
     Anschließend werden die Performanzdaten ausgewertet und ein Ranking der Programmiersprachen erstellt. Die besten 5 Programmiersprachen werden übernommen.\\
-    \textbf{Eigene Tests für die Ausführungsgeschwindigkeits- und Entwicklungsgeschwindigkeitstests}\\
-    Als eigene Tests für die Performanz wird folgende Vorgehensweise betrachtet:\\
+    \textbf{Eigene Tests für die Ausführungsgeschwindigkeits- und Entwicklungsgeschwindigkeitstests von Programmiersprachen}\\
+    \textit{Welche Forschnungsfrage soll beantwortet werden?}\\
+    Mithilfe dieser Tests soll untersucht werden, in welchen Programmiersprachen etwas potenziell schnell entwickelt werden kann und die schnell die Ausführungsgeschwindigkeiten der jeweiligen Programmiersprachen sind.\\
+    \textit{Was ist das Set Up?}\\
+    Das Set Up der Tests besteht aus der Kommandozeile, einem Text Editor (Visual Studio Code) und den Kompilern für die jeweiligen Programmiersprachen.\\
+    \textit{Wie wird die Evaluation durchgeführt?}\\
     Es werden pro Programmiersprache jeweils 3 Dateien erstellt. Die eine Datei enthält die main Methode, die für die Geschwindigkeit messen und Ergebnisse ausgeben zuständig ist. Diese verwendet die anderen beiden Dateien. Die zweite Datei beinhaltet eine Klasse, die für eine Datenbankabfrage verwendet wird. Dafür wird eine Testdatenbank in SQLite bereitgestellt. Diese beinhaltet eine Tabelle mit 4 Spalten und 10.000 Einträgen. Im Programm wird die ganze Tabelle per Datenbankabfrage gelesen und die Daten in einer eigenen, inneren Klasse gespeichert. Die dritte Datei wird für das Einlesen einer INI Datei verwendet. Alle Kategorien und deren Einträge werden gelesen, in einer eigenen, inneren Klasse gespeichert und der jeweils letzte Eintrag verändert in "Testing around", in die Datei geschrieben, wieder in den eigentlichen Wert verändert und erneut in die Datei geschrieben.\\
     Für den Ausführungsgeschwindigkseitsvergleich werden die beiden Testklassen jeweils 500 mal erstellt und dessen Testmethode ausgeführt. Die Zeit wird für jede Ausführung gemessen und der Durchschnitt genommen.\\
     Für den Entwicklungsgeschwindigkeitsvergleich werden die Programme selbst betrachtet. Dabei wird vor allem auf die notwendigen Codezeilen geschaut (ohne Leerzeilen, jedoch mit Lesbarkeit nach den Codestyleempfehlungen) und wie die Syntax der Sprache ist, vor allem die Lesbarkeit.\\
-    Am Ende werden die Programmiersprachen nach einer Mischung der beiden Geschwindigkeitsvergleiche sortiert und die top 4 Programmiersprachen genommen.
+    % Am Ende werden die Programmiersprachen nach einer Mischung der beiden Geschwindigkeitsvergleiche sortiert und die top 4 Programmiersprachen genommen.
     \subsubsection{Entscheidung}
     \label{ProgrammiersprachenEntscheidung}
     \textbf{Zukunftssicherheit der Programmiersprachen}\\
@@ -714,6 +722,7 @@
     Die Ausführungsgeschwindigkeit wird mithilfe von der Systemzeit gemessen. Dazu wird die aktuelle Systemzeit vor dem Codeblock gespeichert und diese Zeit von der Systemzeit nach dem Codeblock subtrahiert. Die Programme werden jeweils 50x ausgeführt und der Mittelwert der Ergebnisse genommen.\\
     Für Entwicklungsgeschwindigkeit wird anhand der notwendigen Codezeilen und dem notwendigen Overhead beurteilt.\\\\
     \textbf{Ergebnisse Ausführungsgeschwindigkeits- und Entwicklungsgeschwindigkeitstests}\\
+    \textit{Was sind die Ergebnisse?}\\
     Die Tests wurden auf einem Linux Mint 20 Cinnamon Laptop ausgeführt, der folgende Hardware hat:\\
     \textbf{Prozessor:} Intel© Core™ i5-7200U CPU @ 2.50GHz × 2\\
     \textbf{Arbeitsspeicher:} 8GB\\
@@ -735,7 +744,7 @@
         \hline
         Scala&0,0084 s&0,0035 s&106\\
         \hline
-    \end{tabular}
+    \end{tabular}\\
     Weiterhin wurden die Tests auf einem Windows 10 Computer ausgeführt, welcher folgende Hardware hat:\\
     \textbf{Prozessor:} Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz, 3408 MHz, 4 Kern(e), 4 logische(r) Prozessor(en)\\
     \textbf{Arbeitsspeicher:} 16GB\\
@@ -757,11 +766,12 @@
         \hline
         Scala&0,0071 s&0,0039 s\\
         \hline
-    \end{tabular}
+    \end{tabular}\\
+    \textit{Interpretation der Ergsbnisse und beantwortung, welche Programmiersprachen am besten geeignet sind anhand eines Rankings}\\
     Zu erkennen ist, dass Kotlin und Python, bis auf eine Zeile Unterschied, am wenigsten Codezeilen benötigen. Das liegt daran, dass Python keine Sichtbarkeitsmodifier wie public und private hat und Kotlin automatisch getter und setter generiert, welche sich aber nach belieben ersetzen lassen. Groovy hat auch automatisch generierte getter und setter, im Unterschied zu Kotlin können die Felder aber nicht im Methodenaufruf Styl deklariert werden. Scala erlaubt getter Methoden zu schreiben, die keine Funktionsaufrufklammern haben, wodurch auch wenige Codezeilen eingespart werden, auch erlaubt Scala, wie Kotlin, eine Funktionsaufrufklammern Schreibeweise für die Klassenparameter. Am meisten Codezeilen benötigen Java und C$\sharp$, wobei bei C$\sharp$ von der Codingconvention die Methodenklammern in einer neuen Zeile empfohlen werden, was insgesamt 22 Zeilen ausmacht. Diese unterstützen beide keine Funktionsaufrufklammern Schreibweise für Klassenparameter, auch wird keine automatische getter und setter Generierung unterstützt. Jedoch erlaubt C$\sharp$ eine Kurzschreibweise für getter und setter.\\
     Von der Syntax her ist Python eine sehr lesbare Sprache, egal in welchen Programmen, denn die Syntax erzwingt dies. Die anderen haben keine Syntax, die das Einrücken erzwingt.\\
     Einen kleinen, aber doch netter Unterschied, haben Java und C$\sharp$ zu den anderen 4 Programmiersprachen, denn in nur in Java und C$\sharp$ sind die Semikolons notwendig, in den anderen nicht. So entstehen weniger Syntaxfehler.\\
-    Java hängt wenigen sehr netten Features gegnüber den anderen Programmiersprachen zurück, dazu zählt die Stringinterpolation, also das Verwenden von Variablen und Funktionsaufrufe innerhalb des Strings, ohne eine String Format explizit machen zu müssen und das überschreiben der Operatoren.\\
+    Java hängt wenigen sehr netten Features gegenüber den anderen Programmiersprachen zurück, dazu zählt die Stringinterpolation, also das Verwenden von Variablen und Funktionsaufrufe innerhalb des Strings, ohne eine String Format explizit machen zu müssen und das überschreiben der Operatoren.\\
     Python, Kotlin und Groovy erlauben Higher Order Functions, also Funktionen, die außerhalb einer Klasse geschrieben werden können. Das ist ein nettes nice to have, denn so sind keine Klassen für einzelne Methoden notwendig.\\\\
     Entwicklungstechnisch sortiere ich die 6 Programmiersprachen deswegen folgend an:\\
     \textbf{1. Python}: Die Higher Order Functions und vor allem die Syntax machen Python zu einer sehr lesbaren Sprache. Neue Klassenvariablen brauchen nicht explizit deklariert werden, diese können auch in einer Methode deklariert werden. Die Kombination macht Python sehr angenehm zum Entwickeln.\\
@@ -785,6 +795,13 @@
     \textbf{5. Python}: Die Entwicklung in Python ist sehr sehr angenehm, jedoch dauert die Ausführung der Programme sehr lange. Das wird daran liegen, dass Python interpretiert wird. Deshalb wird Python hier eingeordnet.\\
     \textbf{6. Groovy}: Die Entwicklung ist auch in Groovy sehr angenehm, jedoch ist die Ausführungsgeschwindigkeit noch langsamer als die von Python bei den Datenbanken, was in der Praxis sehr schlecht ist.\\\\
     Anhand der Anordnung wären die Top 4 Programmiersprachen Kotlin, Java, Scala und C$\sharp$. Da jedoch Kotlin, Scala, Java und Groovy auf der JVM lauffähig sind, wird für den dritten Abschnitt noch Python mitbetrachtet neben den Top 4 Programmiersprachen. Der Grund ist, dass ein Python Framework eventuell etwas Geschwindigkeit aufbauen kann.
+    \textit{Entscheidungen, die für die Evaluation vorgenommen wurden, welche die Validität der Regebnisse gefährden können}\\
+    Folgende Entscheidungen wurde vorgenommen:
+    \begin{enumerate}
+        \item Version der Programmiersprache: Bei der Entwicklungszeit spielt die Version der Programmiersprache eine Rolle. Der Grund ist, dass bei neueren Versionen oft neue Features hinzukommen, die die Entwicklungszeit deutlich reduzieren können (z.B. foreach Schleifen anstatt klassische for Schleifen).
+        \item Betriebssystem: Das Betriebssystem spielt eine wichtige Rolle: Programmiersprachen, die für die Entwicklung des Betriebssystems verwendet werden, laufen in der Regel schneller als Programmiersprachen, die nicht bei der Betriebssystementwicklung verwendet wurden.
+        \item Compiler: Die Wahl des Compilers spielt eine entscheidente Rolle. Denn bei den meisten Skriptsprachen, wie Python, gibt es den Compiler, der offiziell bereitgestellt wird. Aber es gibt auch Compiler von anderen Organisationen, welche z.B. das Just in Time Kompilieren unterstützen. Der Compiler wirkt sich auf die Ausführungsgeschwindigkeiten aus.
+    \end{enumerate}
     \newpage\noindent
     %
     %%%%%%%%%%%%%%%%%%%%%%%%%% Auswahl Frameworks %%%%%%%%%%%%%%%%%%%%%%%%%%
