@@ -1,0 +1,10 @@
+@inherits RadzenServerSide.Shared.DropdownInputComponent
+
+@using Radzen.Blazor;
+@using Radzen;
+
+<div style="width: 100%; position: relative; height: 65px;">
+    <RadzenLabel style="font-weight: bold; height: 24px; text-align: left; width: 100%; position: absolute; top: 0; left: 0;" Text="@Text"></RadzenLabel>
+    <RadzenDropDown Data="@DropdownValues" @bind-Value="@Value" style="position: absolute; top: 24px; left: 0; width: 100%; text-align: left;" Name="Dropdown0"></RadzenDropDown>
+    <RadzenTextBox style="left: 0; position: absolute; top: 24px; width: calc(100% - 30px);" Name="Textbox0" ValueChanged="@(s => Value = s)" Value="@Value"></RadzenTextBox>
+</div>

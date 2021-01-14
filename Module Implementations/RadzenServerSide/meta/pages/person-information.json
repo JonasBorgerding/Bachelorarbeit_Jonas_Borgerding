@@ -1,0 +1,213 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-9",
+              "components": [
+                {
+                  "allowFiltering": false,
+                  "allowPaging": true,
+                  "allowSorting": true,
+                  "columnWidth": "",
+                  "columns": [
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "Forename",
+                      "title": "Vorname",
+                      "type": "string"
+                    },
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "Surname",
+                      "title": "Nachname",
+                      "type": "string"
+                    },
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "CityCode",
+                      "title": "PLZ",
+                      "type": "string"
+                    },
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "City",
+                      "title": "Stadt",
+                      "type": "string"
+                    },
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "State",
+                      "title": "Bundesland",
+                      "type": "string"
+                    }
+                  ],
+                  "count": "",
+                  "data": "${PersonData}",
+                  "editMode": "single",
+                  "expandMode": "single",
+                  "itemType": "RadzenServerSide.Pages.Person",
+                  "name": "grid0",
+                  "style": {
+                    "height": "calc(60vh - 75px)"
+                  },
+                  "template": "",
+                  "type": "grid"
+                }
+              ],
+              "name": "col0",
+              "style": {},
+              "type": "col"
+            },
+            {
+              "class": "col-3",
+              "components": [
+                {
+                  "content": "@foreach (var filter in Filters)\n{\n  <DropdownInput Text=\"@filter.Title\" DropdownValues=\"@filter.DefaultValues\" ValueChanged=\"s => FilterValues[filter.QueryLabel] = s\"></DropdownInput>\n}",
+                  "name": "html0",
+                  "type": "html"
+                },
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "name": "FetchPeople",
+                        "schema": {
+                          "$ref": "#/definitions/Void",
+                          "dotnetType": "void"
+                        },
+                        "type": "invoke-method"
+                      }
+                    ]
+                  },
+                  "name": "button0",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "text": "Filter Anwenden",
+                  "type": "button"
+                }
+              ],
+              "name": "col1",
+              "style": {
+                "textAlign": "right"
+              },
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "style": {},
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "columns": [
+                    {
+                      "filterable": false,
+                      "format": "",
+                      "property": "PersonInformation",
+                      "title": "Person",
+                      "type": "string",
+                      "width": "75%"
+                    },
+                    {
+                      "format": "date-time",
+                      "formatString": "{0:d}",
+                      "property": "Date",
+                      "title": "Datum",
+                      "type": "string",
+                      "width": "25%"
+                    }
+                  ],
+                  "data": "${MeetingData}",
+                  "itemType": "RadzenServerSide.Pages.Meeting",
+                  "name": "grid1",
+                  "style": {
+                    "height": "calc(40vh - 75px)",
+                    "marginTop": "1vh"
+                  },
+                  "type": "grid"
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "style": {},
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "events": {
+    "load": [
+      {
+        "name": "PersonData",
+        "type": "set",
+        "value": "new List<Person>()",
+        "valueType": "List<RadzenServerSide.Pages.Person>"
+      },
+      {
+        "name": "MeetingData",
+        "type": "set",
+        "value": "new List<Meeting>()",
+        "valueType": "List<RadzenServerSide.Pages.Meeting>"
+      },
+      {
+        "name": "FilterValues",
+        "type": "set",
+        "value": "new Dictionary<string, string>()",
+        "valueType": "Dictionary<string, string>"
+      },
+      {
+        "name": "Filters",
+        "type": "set",
+        "value": "new List<Filter>()",
+        "valueType": "List<RadzenServerSide.Pages.Filter>"
+      },
+      {
+        "name": "PersonQueryString",
+        "type": "set",
+        "value": "\"\"",
+        "valueType": "string"
+      },
+      {
+        "name": "MeetingQueryString",
+        "type": "set",
+        "value": "\"\"",
+        "valueType": "string"
+      },
+      {
+        "name": "ReadConfigFile",
+        "schema": {
+          "$ref": "#/definitions/Void",
+          "dotnetType": "void"
+        },
+        "type": "invoke-method"
+      },
+      {
+        "name": "SelectedPerson",
+        "type": "set",
+        "value": "0",
+        "valueType": "int"
+      }
+    ]
+  },
+  "layout": "Main",
+  "name": "PersonInformation"
+}

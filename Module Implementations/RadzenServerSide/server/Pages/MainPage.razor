@@ -1,0 +1,13 @@
+﻿@page "/"
+@page "/main-page"
+@layout MainLayout
+@inherits RadzenServerSide.Pages.MainPageComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenLink Path="person-information" Text="Personen Information">
+    </RadzenLink>
+  </ChildContent>
+</RadzenContent>

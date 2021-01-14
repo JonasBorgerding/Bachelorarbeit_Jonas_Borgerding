@@ -1,0 +1,22 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "name": "link0",
+          "path": "person-information",
+          "text": "Personen Information",
+          "type": "link"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "events": {
+    "load": []
+  },
+  "layout": "Main",
+  "name": "MainPage"
+}
