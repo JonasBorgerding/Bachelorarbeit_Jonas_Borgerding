@@ -200,6 +200,13 @@ namespace RadzenServerSide.Pages
             SelectedPerson = 0;
         }
 
+        protected async System.Threading.Tasks.Task Grid0RowSelect(RadzenServerSide.Pages.Person args)
+        {
+            SelectedPerson = args.Id;
+
+            FetchMeetings();
+        }
+
         protected async System.Threading.Tasks.Task Button0Click(MouseEventArgs args)
         {
             FetchPeople();

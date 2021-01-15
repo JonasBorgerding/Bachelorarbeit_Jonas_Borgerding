@@ -59,7 +59,6 @@
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RadzenServerSide.MvcApplicationPartsAssemblyInfo.cache
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RadzenServerSide.RazorComponent.input.cache
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RazorDeclaration/App.razor.g.cs
-/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/MainPage.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/_Imports.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/LoginLayout.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/MainLayout.razor.g.cs
@@ -69,7 +68,6 @@
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RadzenServerSide.TagHelpers.output.cache
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/RadzenServerSide.RazorCoreGenerate.cache
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/Razor/App.razor.g.cs
-/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/Razor/Pages/MainPage.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/Razor/Pages/_Imports.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/Razor/Shared/LoginLayout.razor.g.cs
 /home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenServerSide/server/obj/Debug/netcoreapp3.1/Razor/Shared/MainLayout.razor.g.cs

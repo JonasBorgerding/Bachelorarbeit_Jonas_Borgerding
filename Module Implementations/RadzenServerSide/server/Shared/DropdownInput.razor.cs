@@ -20,8 +20,22 @@ namespace RadzenServerSide.Shared
         [Parameter]
         public EventCallback<string> ValueChanged { get; set; }
 
-        private string _value;
+        protected bool MouseEnter { get; set; }
 
+        private string _dropdownValue;
+        protected string DropdownValue
+        {
+            get => _dropdownValue;
+            set
+            {
+                if (MouseEnter || value == "") return;
+                ValueChanged.InvokeAsync(value);
+                Value = value;
+                _dropdownValue = "";
+            }
+        }
+
+        private string _value;
         protected string Value
         {
             get => _value;

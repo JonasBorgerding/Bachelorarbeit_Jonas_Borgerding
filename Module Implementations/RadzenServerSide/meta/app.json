@@ -8,16 +8,14 @@
   "logo": "",
   "name": "RadzenServerSide",
   "navigation": [
-    "MainPage",
     "PersonInformation"
   ],
   "pages": [
-    "MainPage",
     "PersonInformation"
   ],
   "serverLang": "cs",
   "serverProject": true,
   "serverVersion": "3",
-  "startPage": "MainPage",
+  "startPage": "PersonInformation",
   "theme": "material"
 }

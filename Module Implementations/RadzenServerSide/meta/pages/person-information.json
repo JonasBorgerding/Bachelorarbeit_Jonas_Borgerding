@@ -53,6 +53,24 @@
                   "count": "",
                   "data": "${PersonData}",
                   "editMode": "single",
+                  "events": {
+                    "rowSelect": [
+                      {
+                        "name": "SelectedPerson",
+                        "type": "set",
+                        "value": "${event.Id}",
+                        "valueType": "int"
+                      },
+                      {
+                        "name": "FetchMeetings",
+                        "schema": {
+                          "$ref": "#/definitions/Void",
+                          "dotnetType": "void"
+                        },
+                        "type": "invoke-method"
+                      }
+                    ]
+                  },
                   "expandMode": "single",
                   "itemType": "RadzenServerSide.Pages.Person",
                   "name": "grid0",
@@ -113,6 +131,8 @@
               "class": "col-md-12",
               "components": [
                 {
+                  "allowPaging": true,
+                  "allowSorting": true,
                   "columns": [
                     {
                       "filterable": false,

@@ -61,10 +61,6 @@
         {
           "items": [
             {
-              "path": "main-page",
-              "text": "Hauptmenü"
-            },
-            {
               "path": "person-information",
               "text": "Personen Information"
             }

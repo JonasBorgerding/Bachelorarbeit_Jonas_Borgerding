@@ -87,8 +87,7 @@ namespace RadzenServerSide.Pages
                         Surname = reader.GetString("surname")
                     });
                 }
-
-                Console.WriteLine(PersonData.Count);
+                reader.Close();
             }
             catch (Exception e)
             {
@@ -99,6 +98,43 @@ namespace RadzenServerSide.Pages
         public void FetchMeetings()
         {
             var query = MeetingQueryString.Replace(":personID", SelectedPerson.ToString());
+            
+            try
+            {
+                var connection = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;");
+                connection.Open();
+                var command = new MySqlCommand(query, connection);
+                var reader = command.ExecuteReader();
+                var meetings = new List<Meeting>();
+                while (reader.Read())
+                {
+                    var otherId = reader.GetInt32("person1");
+                    otherId = SelectedPerson == otherId ? reader.GetInt32("person2") : otherId;
+                    meetings.Add(new Meeting()
+                    {
+                        Id = reader.GetInt32("ID"),
+                        Date = reader.GetDateTime("date"),
+                        PersonInformation = otherId.ToString()
+                    });
+                }
+                reader.Close();
+                foreach (var meeting in meetings)
+                {
+                    command = new MySqlCommand($"SELECT * from Person WHERE ID = {int.Parse(meeting.PersonInformation)}", connection);
+                    reader = command.ExecuteReader();
+                    reader.Read();
+                    meeting.PersonInformation = reader.GetString("forename") + " " + reader.GetString("surname") +
+                                                " (" + reader.GetString("zip_code") + " " +
+                                                reader.GetString("city") + ")";
+                    reader.Close();
+                }
+                MeetingData = meetings;
+                connection.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }
