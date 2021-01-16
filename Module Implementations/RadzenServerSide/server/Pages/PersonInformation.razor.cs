@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using IniParser;
 using MySql.Data.MySqlClient;
-using Radzen;
-using Radzen.Blazor;
 
 namespace RadzenServerSide.Pages
 {
@@ -58,7 +55,7 @@ namespace RadzenServerSide.Pages
             }
         }
 
-        public void FetchPeople()
+        private void FetchPeople()
         {
             var query = new string(PersonQueryString);
             foreach (var key in FilterValues.Keys)
@@ -95,7 +92,7 @@ namespace RadzenServerSide.Pages
             }
         }
 
-        public void FetchMeetings()
+        private void FetchMeetings()
         {
             var query = MeetingQueryString.Replace(":personID", SelectedPerson.ToString());
             

@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.RadzenServerSide.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\RadzenServerSide\.idea\.idea.RadzenServerSide.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
