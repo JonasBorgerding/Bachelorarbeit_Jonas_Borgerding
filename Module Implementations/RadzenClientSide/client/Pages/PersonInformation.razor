@@ -1,0 +1,51 @@
+﻿@page "/"
+@page "/person-information"
+@layout MainLayout
+@inherits RadzenClientSide.Pages.PersonInformationComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div style="height: " class="row">
+      <div class="col-9">
+        <RadzenGrid @ref="grid0" AllowPaging="true" AllowSorting="true" Data="@PersonData" TItem="RadzenClientSide.Models.PersonInformation.Person" PageSize="100" style="height: calc(60vh - 75px)" RowSelect="@Grid0RowSelect">
+          <Columns>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Person" Property="Forename" Title="Vorname">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Person" Property="Surname" Title="Nachname">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Person" Property="City" Title="Stadt">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Person" Property="CityCode" Title="PLZ">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Person" Property="State" Title="Bundesland">
+            </RadzenGridColumn>
+          </Columns>
+        </RadzenGrid>
+      </div>
+      <div class="col-3" style="height: calc(60vh - 75px)">
+        <RadzenHtml>
+          @foreach (var filter in Filters)
+            {
+              <DropdownInput Text="@(filter.Title)" DropdownValues="@(filter.DefaultValues)" ValueChanged="newValue => FilterValues[filter.QueryLabel] = newValue"/>
+            }
+        </RadzenHtml>
+        <RadzenButton style="width: 100%" Text="Filtern" Click="@Button0Click">
+        </RadzenButton>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenGrid @ref="grid1" Data="@MeetingData" TItem="RadzenClientSide.Models.PersonInformation.Meeting" style="height: calc(40vh - 75px)">
+          <Columns>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Property="PersonInformation" Title="Person Information" Width="75%" Type="string">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Format="date-time" FormatString="{0:d}" Property="Date" Title="Date" Width="25%" Type="string">
+            </RadzenGridColumn>
+          </Columns>
+        </RadzenGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

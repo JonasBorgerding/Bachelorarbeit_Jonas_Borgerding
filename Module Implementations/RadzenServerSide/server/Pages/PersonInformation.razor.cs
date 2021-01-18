@@ -34,7 +34,7 @@ namespace RadzenServerSide.Pages
     {
         private void ReadConfigFile()
         {
-            var configFile = new FileIniDataParser().ReadFile("wwwroot/config.ini");
+            var configFile = new FileIniDataParser().ReadFile("wwwroot/config.ini", Encoding.UTF8);
             foreach (var section in configFile.Sections)
             {
                 if (section.SectionName == "SQLStrings")
@@ -60,7 +60,6 @@ namespace RadzenServerSide.Pages
             var query = new string(PersonQueryString);
             foreach (var key in FilterValues.Keys)
             {
-                Console.WriteLine(key);
                 query = query.Replace(key, FilterValues[key]);
             }
 
@@ -69,7 +68,6 @@ namespace RadzenServerSide.Pages
                 var connection = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;");
                 connection.Open();
                 var command = new MySqlCommand(query, connection);
-                Console.WriteLine(query);
                 var reader = command.ExecuteReader();
                 PersonData = new List<Person>();
                 while (reader.Read())
@@ -84,6 +82,7 @@ namespace RadzenServerSide.Pages
                         Surname = reader.GetString("surname")
                     });
                 }
+                grid0.GoToPage(0);
                 reader.Close();
             }
             catch (Exception e)
@@ -126,6 +125,7 @@ namespace RadzenServerSide.Pages
                     reader.Close();
                 }
                 MeetingData = meetings;
+                grid1.GoToPage(0);
                 connection.Close();
             }
             catch (Exception e)

@@ -88,7 +88,6 @@
         <element id="file-copy" path="$PROJECT_DIR$/target/Vaadin-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Vaadin/web/Web" />
-      <element id="gwt-compiler-output" facet="Vaadin/gwt/GWT" />
     </root>
   </artifact>
 </component>

@@ -1,19 +1,32 @@
 {
-  "name": "RadzenClientSide",
+  "cssFiles": [],
+  "dataSources": [],
   "generator": "@radzen/blazor-server",
-  "theme": "material",
-  "logo": "",
-  "pages": [],
+  "https": false,
+  "ignore": [
+    ""
+  ],
+  "javaScriptFiles": [],
   "layouts": [
-    "Login",
     "Main"
   ],
-  "startPage": null,
-  "https": false,
-  "navigation": [],
-  "dataSources": [],
+  "logo": "",
+  "name": "RadzenClientSide",
+  "namespaces": [],
+  "navigation": [
+    "Person-Information"
+  ],
+  "pages": [
+    "Person-Information"
+  ],
+  "port": 8000,
+  "serverLang": "cs",
+  "serverPort": 5000,
   "serverProject": true,
   "serverVersion": "3",
-  "serverLang": "cs",
+  "startPage": "Person-Information",
+  "theme": "material",
+  "themeSettings": null,
+  "title": "RadzenClientSide",
   "wasm": true
 }

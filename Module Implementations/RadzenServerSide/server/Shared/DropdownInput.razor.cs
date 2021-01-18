@@ -42,7 +42,6 @@ namespace RadzenServerSide.Shared
             set
             {
                 ValueChanged.InvokeAsync(value);
-                Console.WriteLine(value);
                 _value = value;
             }
         }

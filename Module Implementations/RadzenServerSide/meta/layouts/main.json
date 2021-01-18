@@ -79,7 +79,7 @@
       "components": [
         {
           "name": "footerText",
-          "text": "Jonas Borgerding (Siemens), Copyright Ⓒ 2021",
+          "text": "Jonas Borgerding, Copyright Ⓒ 2021",
           "type": "label"
         }
       ],

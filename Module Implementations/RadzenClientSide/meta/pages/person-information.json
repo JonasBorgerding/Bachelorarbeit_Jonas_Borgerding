@@ -1,0 +1,192 @@
+{
+  "access": [],
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-9",
+              "components": [
+                {
+                  "allowPaging": true,
+                  "allowSorting": true,
+                  "columns": [
+                    {
+                      "property": "Forename",
+                      "title": "Vorname"
+                    },
+                    {
+                      "property": "Surname",
+                      "title": "Nachname"
+                    },
+                    {
+                      "property": "City",
+                      "title": "Stadt"
+                    },
+                    {
+                      "property": "CityCode",
+                      "title": "PLZ"
+                    },
+                    {
+                      "property": "State",
+                      "title": "Bundesland"
+                    }
+                  ],
+                  "data": "${PersonData}",
+                  "events": {
+                    "rowSelect": [
+                      {
+                        "name": "SelectedPerson",
+                        "type": "set",
+                        "value": "${event}",
+                        "valueType": "RadzenClientSide.Models.PersonInformation.Person"
+                      },
+                      {
+                        "name": "FetchMeetings",
+                        "schema": {
+                          "$ref": "#/definitions/Void",
+                          "dotnetType": "void"
+                        },
+                        "type": "invoke-method"
+                      }
+                    ]
+                  },
+                  "itemType": "RadzenClientSide.Models.PersonInformation.Person",
+                  "name": "grid0",
+                  "pageSize": 100,
+                  "style": {
+                    "height": "calc(60vh - 75px)"
+                  },
+                  "type": "grid"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-3",
+              "components": [
+                {
+                  "content": "@foreach (var filter in Filters)\n  {\n    <DropdownInput Text=\"@(filter.Title)\" DropdownValues=\"@(filter.DefaultValues)\" ValueChanged=\"newValue => FilterValues[filter.QueryLabel] = newValue\"/>\n  }",
+                  "name": "html0",
+                  "type": "html"
+                },
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "condition": "",
+                        "name": "FetchPeople",
+                        "schema": {
+                          "$ref": "#/definitions/Void",
+                          "dotnetType": "void"
+                        },
+                        "type": "invoke-method"
+                      }
+                    ]
+                  },
+                  "name": "button0",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "text": "Filtern",
+                  "type": "button"
+                }
+              ],
+              "name": "col1",
+              "style": {
+                "height": "calc(60vh - 75px)"
+              },
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "style": {
+            "height": ""
+          },
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "columns": [
+                    {
+                      "format": "",
+                      "property": "PersonInformation",
+                      "title": "Person Information",
+                      "type": "string",
+                      "width": "75%"
+                    },
+                    {
+                      "format": "date-time",
+                      "formatString": "{0:d}",
+                      "property": "Date",
+                      "title": "Date",
+                      "type": "string",
+                      "width": "25%"
+                    }
+                  ],
+                  "data": "${MeetingData}",
+                  "itemType": "RadzenClientSide.Models.PersonInformation.Meeting",
+                  "name": "grid1",
+                  "style": {
+                    "height": "calc(40vh - 75px)"
+                  },
+                  "type": "grid"
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "events": {
+    "load": [
+      {
+        "name": "PersonData",
+        "type": "set",
+        "value": "new List<RadzenClientSide.Models.PersonInformation.Person>()",
+        "valueType": "List<RadzenClientSide.Models.PersonInformation.Person>"
+      },
+      {
+        "name": "MeetingData",
+        "type": "set",
+        "value": "new List<RadzenClientSide.Models.PersonInformation.Meeting>()",
+        "valueType": "List<RadzenClientSide.Models.PersonInformation.Meeting>"
+      },
+      {
+        "name": "Filters",
+        "type": "set",
+        "value": "new List<RadzenClientSide.Models.PersonInformation.Filter>()",
+        "valueType": "List<RadzenClientSide.Models.PersonInformation.Filter>"
+      },
+      {
+        "name": "FilterValues",
+        "type": "set",
+        "value": "new Dictionary<string, string>()",
+        "valueType": "Dictionary<string, string>"
+      },
+      {
+        "name": "FetchFilters",
+        "schema": {
+          "$ref": "#/definitions/Void",
+          "dotnetType": "void"
+        },
+        "type": "invoke-method"
+      }
+    ]
+  },
+  "layout": "Main",
+  "name": "Person-Information"
+}
