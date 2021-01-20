@@ -9,7 +9,7 @@ import com.vaadin.flow.router.Route;
 /**
  * The main view contains a button and a click listener.
  */
-@Route
+@Route("main")
 @PWA(name = "My Application", shortName = "My Application")
 public class MainView extends VerticalLayout {
 

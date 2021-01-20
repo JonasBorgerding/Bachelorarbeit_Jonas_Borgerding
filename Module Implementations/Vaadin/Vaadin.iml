@@ -97,7 +97,7 @@
   <component name="designer2.settings">
     <option name="lastJavaLocation" value="$MODULE_DIR$/src/main/java" />
     <option name="lastJavaPackage" value="org.jonas.borgerding.bachelorthesis" />
-    <option name="lastTemplateLocation" value="$MODULE_DIR$/frontend" />
+    <option name="lastTemplateLocation" value="$MODULE_DIR$/frontend/src" />
     <option name="lastTemplateType" value="Polymer" />
     <option name="serverIp" value="192.168.178.26" />
     <option name="serverPort" value="39839" />
