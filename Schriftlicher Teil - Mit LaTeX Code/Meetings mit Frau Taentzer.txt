@@ -1,0 +1,28 @@
+Tiobe
+Gartner report
+
+Fragen an Frau Taentzer:
+
+Meeting 1:
+1. Ist meien Vorgehensweise in Ordnung? (Erst Technologieplattform, dann viele Frameworks nicht detailiert, am Ende 3 Frameworks detailiert)
+2. Wenn ja, wie detailliert sollen Frameworks in Schritt 2? Reicht es aus zu nennen, von wem es ist, welche Sprachen involviert sind und die wichtigsten Aspekte des Frameworks?
+3. Wie detailliert sollen die Detailvergleiche?
+4. Detailvergleich ist mit Entwicklung von einem Modul. Wie ausführlich soll die Dokumentation im Code und im Bericht sein? Sollen Tests geschrieben werden? Wie soll Quellcode bereitgestellt werden?(GitHub, USB Stick)
+
+Kriterien priosieren
+
+
+Dokument schicken anstatt plain text per mail
+
+Reicht eine Web-App aus?
+Beliebtheit der einzelnen Frameworks
+Notieren, wie ich an Frameworks drankomme
+Erweiterungen im Schritt nach Framework herausfinden
+
+Check über Heise, Chip zu neuen Frameworks
+
+Kriterien nicht präzise genug formuliert
+
+Aufschreiben, wie ich an Frameworks komme
+
+Bei Endentwicklung, warum ist Modul repräsentativ

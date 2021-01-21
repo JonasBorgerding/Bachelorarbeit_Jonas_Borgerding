@@ -39,7 +39,7 @@
       <div class="col-md-12">
         <RadzenGrid @ref="grid1" AllowPaging="true" AllowSorting="true" Data="@MeetingData" TItem="RadzenServerSide.Pages.Meeting" PageSize="100" style="height: calc(40vh - 75px); margin-top: 1vh">
           <Columns>
-            <RadzenGridColumn TItem="RadzenServerSide.Pages.Meeting" Filterable="false" Property="PersonInformation" Title="Person" Width="75%" Type="string">
+            <RadzenGridColumn TItem="RadzenServerSide.Pages.Meeting" Filterable="false" Property="PersonInformation" Title="Personen Information" Width="75%" Type="string">
             </RadzenGridColumn>
             <RadzenGridColumn TItem="RadzenServerSide.Pages.Meeting" Format="date-time" FormatString="{0:d}" Property="Date" Title="Datum" Width="25%" Type="string">
             </RadzenGridColumn>

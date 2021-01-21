@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/server/RadzenClientSide.Server.csproj": {}
+    "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\server\\RadzenClientSide.Server.csproj": {}
   },
   "projects": {
-    "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/RadzenClientSide.Client.csproj": {
+    "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\RadzenClientSide.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/RadzenClientSide.Client.csproj",
+        "projectUniqueName": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\RadzenClientSide.Client.csproj",
         "projectName": "RadzenClientSide.Client",
-        "projectPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/RadzenClientSide.Client.csproj",
-        "packagesPath": "/home/jonas/.nuget/packages/",
-        "outputPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/obj/",
+        "projectPath": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\RadzenClientSide.Client.csproj",
+        "packagesPath": "C:\\Users\\JBorg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/jonas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\JBorg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,33 +89,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/server/RadzenClientSide.Server.csproj": {
+    "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\server\\RadzenClientSide.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/server/RadzenClientSide.Server.csproj",
+        "projectUniqueName": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\server\\RadzenClientSide.Server.csproj",
         "projectName": "RadzenClientSide.Server",
-        "projectPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/server/RadzenClientSide.Server.csproj",
-        "packagesPath": "/home/jonas/.nuget/packages/",
-        "outputPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/server/obj/",
+        "projectPath": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\server\\RadzenClientSide.Server.csproj",
+        "packagesPath": "C:\\Users\\JBorg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/jonas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\JBorg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/RadzenClientSide.Client.csproj": {
-                "projectPath": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/RadzenClientSide/client/RadzenClientSide.Client.csproj"
+              "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\RadzenClientSide.Client.csproj": {
+                "projectPath": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\RadzenClientSide\\client\\RadzenClientSide.Client.csproj"
               }
             }
           }
@@ -177,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

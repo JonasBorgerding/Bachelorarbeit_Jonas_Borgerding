@@ -2,9 +2,9 @@ create table Person (
     ID int primary key,
     forename varchar(20) not null,
     surname varchar(20) not null,
-    city varchar(20) not null,
+    city varchar(30) not null,
     zip_code varchar(5) not null,
-    state varchar(20) not null
+    state varchar(30) not null
 );
 
 create table Meeting (

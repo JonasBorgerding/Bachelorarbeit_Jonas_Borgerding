@@ -39,9 +39,9 @@
       <div class="col-md-12">
         <RadzenGrid @ref="grid1" Data="@MeetingData" TItem="RadzenClientSide.Models.PersonInformation.Meeting" style="height: calc(40vh - 75px)">
           <Columns>
-            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Property="PersonInformation" Title="Person Information" Width="75%" Type="string">
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Property="PersonInformation" Title="Personen Information" Width="75%" Type="string">
             </RadzenGridColumn>
-            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Format="date-time" FormatString="{0:d}" Property="Date" Title="Date" Width="25%" Type="string">
+            <RadzenGridColumn TItem="RadzenClientSide.Models.PersonInformation.Meeting" Format="date-time" FormatString="{0:d}" Property="Date" Title="Datum" Width="25%" Type="string">
             </RadzenGridColumn>
           </Columns>
         </RadzenGrid>

@@ -1,3 +1,6 @@
-/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin/src/main/java/org/jonas/borgerding/bachelorthesis/DropdownInput.java
-/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin/src/main/java/org/jonas/borgerding/bachelorthesis/MainView.java
-/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin/src/main/java/org/jonas/borgerding/bachelorthesis/PersonInformation.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\data\DatabaseConnection.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\org\jonas\borgerding\bachelorthesis\viewmodels\PersonInformation.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\models\Meeting.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\models\Person.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\data\INIConnection.java
+C:\Users\JBorg\Desktop\Bachelorarbeit_Jonas_Borgerding\Module Implementations\Vaadin\src\main\java\models\Filter.java
