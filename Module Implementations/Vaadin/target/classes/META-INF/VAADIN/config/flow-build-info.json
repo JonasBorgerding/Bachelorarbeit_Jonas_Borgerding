@@ -1,9 +1,9 @@
 {
   "compatibilityMode": false,
   "productionMode": false,
-  "npmFolder": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin",
-  "generatedFolder": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin/target/frontend",
-  "frontendFolder": "/home/jonas/Desktop/Bachelorarbeit_Jonas_Borgerding/Module Implementations/Vaadin/frontend",
+  "npmFolder": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\Vaadin",
+  "generatedFolder": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\Vaadin\\target\\frontend",
+  "frontendFolder": "C:\\Users\\JBorg\\Desktop\\Bachelorarbeit_Jonas_Borgerding\\Module Implementations\\Vaadin\\frontend",
   "pnpm.enable": false,
   "require.home.node": false
 }
