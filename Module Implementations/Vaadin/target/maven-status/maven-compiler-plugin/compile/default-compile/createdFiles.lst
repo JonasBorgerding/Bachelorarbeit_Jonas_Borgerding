@@ -1,6 +1,0 @@
-models\Person.class
-models\Meeting.class
-org\jonas\borgerding\bachelorthesis\viewmodels\PersonInformation.class
-org\jonas\borgerding\bachelorthesis\viewmodels\PersonInformation$PersonInformationModel.class
-models\Filter.class
-data\DatabaseConnection.class
