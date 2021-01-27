@@ -4,7 +4,7 @@
     <groupId>org.jonas.borgerding.bachelorthesis</groupId>
     <artifactId>Vaadin</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>My Application</name>
+    <name>Vaadin Module</name>
     <packaging>war</packaging>
 
     <properties>
@@ -103,6 +103,24 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.ini4j</groupId>
+            <artifactId>ini4j</artifactId>
+            <version>0.5.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.vaadin.klaudeta</groupId>
+            <artifactId>grid-pagination</artifactId>
+            <version>2.0.10</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -112,9 +130,9 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.15.v20190215</version>
+                <version>9.4.27.v20200227</version>
                 <configuration>
-                    <scanIntervalSeconds>1</scanIntervalSeconds>
+                    <scanIntervalSeconds>2</scanIntervalSeconds>
                 </configuration>
             </plugin>
 

@@ -3,6 +3,9 @@
   <component name="FacetManager">
     <facet type="gwt" name="GWT">
       <configuration>
+        <setting name="compilerMaxHeapSize" value="1024" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
+        <setting name="gwtSdkUrl" value="file://" />
         <setting name="webFacet" value="Web" />
       </configuration>
     </facet>
@@ -24,6 +27,7 @@
     <content url="file://$MODULE_DIR$/node_modules" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.eclipse.jetty:apache-jsp:11.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:vaadin:14.4.6" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:vaadin-core:14.4.6" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:flow-server:2.4.4" level="project" />
@@ -93,13 +97,16 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.30" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.ini4j:ini4j:0.5.4" level="project" />
+    <orderEntry type="library" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.vaadin.klaudeta:grid-pagination:2.0.10" level="project" />
   </component>
   <component name="designer2.settings">
     <option name="lastJavaLocation" value="$MODULE_DIR$/src/main/java" />
     <option name="lastJavaPackage" value="org.jonas.borgerding.bachelorthesis" />
     <option name="lastTemplateLocation" value="$MODULE_DIR$/frontend/src" />
     <option name="lastTemplateType" value="Polymer" />
-    <option name="serverIp" value="192.168.178.26" />
+    <option name="serverIp" value="192.168.2.103" />
     <option name="serverPort" value="39839" />
   </component>
 </module>

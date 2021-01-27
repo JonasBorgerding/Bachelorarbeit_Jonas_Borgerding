@@ -82,6 +82,9 @@
           <element id="library" level="project" name="Maven: com.vaadin:vaadin-rich-text-editor-flow:2.3.3" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.30" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
+          <element id="library" level="project" name="Maven: org.ini4j:ini4j:0.5.4" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.2" />
+          <element id="library" level="project" name="Maven: org.vaadin.klaudeta:grid-pagination:2.0.10" />
         </element>
       </element>
       <element id="directory" name="META-INF">
